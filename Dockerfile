@@ -16,7 +16,7 @@ RUN echo "https://storage.googleapis.com/alpine-nlp-jp" >> /etc/apk/repositories
   cd ${PYKNP_PKG} && \
   python3 setup.py build
 
-FROM kangaechu/docker-alpine-nlp-jp:latest
+FROM kangaechu/nlp-jp:latest
 
 ENV PYKNP_PKG='pyknp-0.3'
 WORKDIR /nlp
