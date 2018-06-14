@@ -31,7 +31,6 @@ RUN apk add --update --no-cache python3 mecab-dev bash gcc && \
   cd .. && \
   rm -rf mecab-python* pyknp-*
 
-COPY requirements.txt /nlp
 RUN apk add musl linux-headers gcc g++ make gfortran openblas-dev python3 python3-dev && \
   pip3 install --upgrade pip && \
   pip install six numpy scipy scikit-learn
